@@ -1,0 +1,20 @@
+@config "./tailwind.config.js";
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Rubik', sans-serif;
+  /* Colors */
+  --color-softBlue: hsl(231, 69%, 60%);
+  --color-softRed: hsl(0, 94%, 66%);
+  --color-grayishBlue: hsl(229, 8%, 60%);
+  --color-veryDarkBlue: hsl(229, 31%, 21%);
+  /* Spacing */
+  --spacing-180: 32rem;
+  --spacing-200: 34rem;
+  --spacing-220: 36rem;
+  --spacing-230: 37rem;
+}
+
+/* body {
+  @apply font-sans;
+} */

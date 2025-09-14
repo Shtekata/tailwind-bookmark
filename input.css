@@ -18,3 +18,12 @@
 /* body {
   @apply font-sans;
 } */
+
+@media (min-width: 1020px) {
+  .bg-hero {
+    width: 2000px;
+    height: 300px;
+    left: 30%;
+    @apply bg-softBlue absolute top-52 rounded-l-full;
+  }
+}

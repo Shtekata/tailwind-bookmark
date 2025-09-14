@@ -35,3 +35,18 @@
 //     }
 //   }
 // }
+
+const tabs = document.querySelectorAll('.tab')
+const panels = document.querySelectorAll('.panel')
+
+tabs.forEach(tab => tab.addEventListener('click', onTabClick))
+
+function onTabClick(e) {
+  tabs.forEach(tab => tab.children[0].classList.replace('border-softRed', 'border-white'))
+  panels.forEach(panel => panel.classList.replace('flex', 'hidden'))
+
+  e.target.classList.replace('border-white', 'border-softRed')
+  const classString = e.target.getAttribute('data-target')
+
+  document.getElementById('panels').getElementsByClassName(classString)[0].classList.replace('hidden', 'flex')
+}

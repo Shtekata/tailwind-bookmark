@@ -237,8 +237,20 @@
   .mt-16 {
     margin-top: calc(var(--spacing) * 16);
   }
+  .mt-30 {
+    margin-top: calc(var(--spacing) * 30);
+  }
   .mt-32 {
     margin-top: calc(var(--spacing) * 32);
+  }
+  .mt-34 {
+    margin-top: calc(var(--spacing) * 34);
+  }
+  .mt-36 {
+    margin-top: calc(var(--spacing) * 36);
+  }
+  .mt-38 {
+    margin-top: calc(var(--spacing) * 38);
   }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
@@ -567,6 +579,12 @@
   .md\:text-left {
     @media (width >= 768px) {
       text-align: left;
+    }
+  }
+  .md\:text-4xl {
+    @media (width >= 768px) {
+      font-size: var(--text-4xl);
+      line-height: var(--tw-leading, var(--text-4xl--line-height));
     }
   }
   .md\:text-base {

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap" rel="stylesheet" />
     <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/png" />
     <link href="./css/output.css" rel="stylesheet" />
     <script>
@@ -384,7 +384,7 @@
           Stay up-to-date with what we're doing
         </h2>
         <!-- Form -->
-        <form class="md:px-14">
+        <form class="md:px-14" onsubmit="event.preventDefault()">
           <!-- Input & Button Container -->
           <div class="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0 md:space-x-3">
             <input
@@ -403,5 +403,28 @@
         </form>
       </div>
     </section>
+    <!-- Footer -->
+    <footer class="bg-veryDarkBlue py-16">
+      <!-- Footer Flex Container -->
+      <div
+        class="container mx-auto flex flex-col items-center justify-between space-y-16 px-6 md:flex-row md:space-y-0"
+      >
+        <!-- Logo/Menu Container -->
+        <div
+          class="text-grayishBlue flex flex-col items-center space-y-8 text-lg font-light md:flex-row md:space-y-0
+            md:space-x-14"
+        >
+          <img src="images/logo-bookmark-footer.svg" alt="" />
+          <a class="hover:text-softRed uppercase" href="#features">Features</a>
+          <a class="hover:text-softRed uppercase" href="#download">Download</a>
+          <a class="hover:text-softRed uppercase" href="#faq">FAQ</a>
+        </div>
+        <!-- Social Container -->
+        <div class="flex space-x-10">
+          <a href="#"><img class="ficon h-6" src="images/icon-facebook.svg" alt="" /></a>
+          <a href="#"><img class="ficon h-6" src="images/icon-twitter.svg" alt="" /></a>
+        </>
+      </div>
+    </footer>
   </body>
 </html>

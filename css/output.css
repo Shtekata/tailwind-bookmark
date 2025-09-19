@@ -930,6 +930,9 @@
 }
 .open {
   transform: rotate(90deg);
+  position: fixed;
+  top: 50px;
+  right: 25px;
 }
 .open .hamburger-top {
   transform: rotate(45deg) translateY(6px) translateX(6px);
